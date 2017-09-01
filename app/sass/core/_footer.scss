@@ -7,3 +7,43 @@
   background-position: top center;
   color: $gray-bf;
 }
+.footer-wrapper{
+  display: flex;
+  padding-top: 57px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.footer-left{
+  flex: 0 0 558px;
+}
+.footer-logo-w{
+  display: flex;
+  margin-bottom: 27px;
+}
+.footer-logo{
+  @include bg-img(contain);
+  background-image: url('images/footer-logo.png');
+  display: block;
+  width: 161px;
+  height: 58px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+.footer-slogan{
+  padding-top: 5px;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: 'IdealistSans';
+}
+.footer-contacts-w{
+  color: $gray-6b;
+  font-family: 'Lato';
+  display: flex;
+}
+.footer-addr{
+  flex: 0 0 195px;
+  a{
+	color: $gray-6b;
+	text-decoration: underline;
+  }
+}

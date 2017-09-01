@@ -9,6 +9,9 @@
   width: 278px;
   flex: 0 0 auto;
 }
+.header-right{
+  flex: 1 0 auto;
+}
 .header-logo{
   @include bg-img(contain);
   background-image: url('images/Logo.png');
@@ -32,6 +35,9 @@
 .header-line1{
   margin-top: 30px;
   display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $gray-de;
+  margin-right: 15px;
 }
 .header-address{
   color: $gray-56;
@@ -40,6 +46,7 @@
   font-family: 'Lato-Semibold';
   &__line{
 	display: flex;
+	margin-bottom: 10px;
   }
   &__c1{
 	width: 210px;
