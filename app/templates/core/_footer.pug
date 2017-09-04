@@ -6,7 +6,7 @@ footer.footer
                     a.footer-logo(href="#")
                     .footer-slogan.
                         Упаковочные  и  расходные<br>
-                        материалы  для  Вас<br>
+                        <span>материалы  для  Вас</span><br>
                         и  вашего  бизнеса
                 .footer-contacts-w
                     .footer-addr.
@@ -20,6 +20,23 @@ footer.footer
                         пн-пт:
                         сб:
                     .footer-wh.
-                        09:00 - 17:30
+                        09:00 - 17:30<br>
                         10:00 - 14:00
             .footer-right
+                .footer-right-l1
+                    .footer-menu-w
+                        ul.footer-menu
+                            each i in footerNav
+                                +footerMenu(i.url, i.name, activeMenu)
+                    .footer-ss-w
+                        .footer-ss
+                            .footer-ss__ttl следуйте за нами в соцсетях
+                            .footer-ss__items
+                                a.footer-ss__item(href="#" style="background-image: url('images/f-vk.png');" target="_blank")
+                                a.footer-ss__item(href="#" style="background-image: url('images/f-ins.png');" target="_blank")
+                                a.footer-ss__item(href="#" style="background-image: url('images/f-facebook.png');" target="_blank")
+                                a.footer-ss__item(href="#" style="background-image: url('images/f-twitter.png');" target="_blank")
+                .footer-right-l2
+                    .f5
+                        .f5__ttl Создание сайта
+                        a.f5__link(href="f5-studio.ru" target="_blank") Digital-Агентство F5

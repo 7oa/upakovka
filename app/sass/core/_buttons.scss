@@ -1,0 +1,41 @@
+.btn{
+  display: inline-block;
+  box-sizing: border-box;
+  transition: .5s;
+  text-transform: uppercase;
+  &_s{
+	height: 34px;
+	padding: 0 30px;
+	border-radius: 17px;
+	font-size: 12px;
+	line-height: 34px;
+	font-family: 'IdealistSans';
+  }
+}
+.btn-green{
+  background-color: $green-21;
+  background-image: linear-gradient(180deg, rgba(252, 252, 252, 0.07) 0%, transparent 100%);
+  color: $white;
+  &:hover,
+  &:focus{
+	background-color: $green-06;
+  }
+  &:active{
+	background-color: $green-21;
+	box-shadow: 0 6px 7px rgba(6, 129, 25, 0.4);
+  }
+}
+.btn-white{
+  background-color: $gb-1;
+  border: 1px solid $green-21;
+  color: $green-21;
+  &:hover,
+  &:focus{
+	background-color: $gb-2;
+  }
+  &:active{
+	background-color: $gb-1;
+	background-image: linear-gradient(180deg, rgba(252, 252, 252, 0.07) 0%, transparent 100%);
+	box-shadow: 0 6px 7px rgba(6, 129, 25, 0.4);
+  }
+}

@@ -9,16 +9,17 @@
 }
 .footer-wrapper{
   display: flex;
-  padding-top: 57px;
+  padding-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
 }
 .footer-left{
-  flex: 0 0 558px;
+  flex: 0 0 588px;
+  padding-top: 5px;
 }
 .footer-logo-w{
   display: flex;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 .footer-logo{
   @include bg-img(contain);
@@ -27,10 +28,10 @@
   width: 161px;
   height: 58px;
   margin-top: 10px;
-  margin-right: 30px;
+  margin-right: 37px;
 }
 .footer-slogan{
-  padding-top: 5px;
+  padding-top: 8px;
   font-size: 11px;
   line-height: 16px;
   font-family: 'IdealistSans';
@@ -39,11 +40,102 @@
   color: $gray-6b;
   font-family: 'Lato';
   display: flex;
+  font-size: 12px;
+  line-height: 16px;
 }
 .footer-addr{
-  flex: 0 0 195px;
+  flex: 0 0 auto;
+  width: 193px;
+  text-transform: uppercase;
+  padding-left: 3px;
   a{
 	color: $gray-6b;
 	text-decoration: underline;
+	text-transform: lowercase;
+  }
+  span{
+	font-size: 10px;
+  }
+}
+.footer-tel{
+	flex: 0 0 120px;
+}
+.footer-d{
+  flex: 0 0 48px;
+}
+.footer-wh{
+  text-align: right;
+}
+.footer-right-l1{
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer-menu-w{
+  width: 335px;
+  flex: 0 0 auto;
+}
+.footer-menu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 290px;
+  &__items{
+	width: 130px;
+  }
+  &__links{
+	color: $gray-bf;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-family: 'IdealistSans';
+	font-size: 12px;
+	line-height: 24px;
+	transition: .5s;
+	&:hover{
+	  text-decoration: none;
+	}
+  }
+}
+.footer-ss{
+  &__ttl{
+	font-family: 'IdealistSans';
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 15px;
+  }
+  &__items{
+	display: flex;
+	justify-content: center;
+  }
+  &__item{
+	@include bg-img(contain);
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 8px;
+  }
+}
+.f5{
+  font-size: 12px;
+  line-height: 24px;
+  font-family: 'IdealistSans';
+  display: flex;
+  color: $gray-6b;
+  text-transform: uppercase;
+  &__ttl{
+	margin-right: 23px;
+  }
+  &__link{
+	color: $gray-6b;
+	text-decoration: underline;
+	background-image: url('images/f5-logo.png');
+	background-repeat: no-repeat;
+	background-position-y: center;
+	min-height: 21px;
+	display: block;
+	padding-left: 38px;
+	&:hover{
+	  text-decoration: none;
+	}
   }
 }

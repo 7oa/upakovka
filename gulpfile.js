@@ -51,10 +51,9 @@ gulp.task('sass', function() {
         .pipe(sass({
             // sourceComments: 'map'
         }))
-        //        .pipe(prefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(autoprefixerOptions))
-        .pipe(cssmin())
+        //.pipe(cssmin())
         .pipe(gulp.dest( dest_path ))
         .pipe(connect.reload());
 });
@@ -62,8 +61,8 @@ gulp.task('sass', function() {
 // Работа с js
 gulp.task('js', function() {
     gulp.src('./app/js/scripts.js')
-        .pipe(rigger())
-        .pipe(uglify())
+        //.pipe(rigger())
+        //.pipe(uglify())
         .pipe(gulp.dest( dest_path + '/js/'))
         .pipe(connect.reload());
 });
@@ -71,12 +70,12 @@ gulp.task('js', function() {
 // Сборка IMG
 gulp.task('image', function () {
     gulp.src('./app/images/**/*.*') //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+        /*.pipe(imagemin({ //Сожмем их
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
-        }))
+        }))*/
         .pipe(gulp.dest(dest_path + '/images/')) //И бросим в public/images/
         .pipe(connect.reload());
 });
@@ -122,11 +121,6 @@ gulp.task('watch', function() {
     watch(['./app/sass/fonts/**/*.*'], function(event, cb) {
         gulp.start('fonts');
     });
-    // gulp.watch(['], ['pug']);
-    // gulp.watch(['./app/sass/**/*.scss'], ['sass']);
-    // gulp.watch(['./app/js/**/*.js'], ['js']);
-    // gulp.watch(['./app/images/**/*.*'], ['image']);
-    // gulp.watch(['./app/sass/fonts/**/*.*'], ['fonts']);
 });
 
 // Запуск сервера c лайврелоадом

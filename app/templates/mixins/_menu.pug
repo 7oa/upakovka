@@ -1,5 +1,12 @@
-- var nav = [{url: '/', name: 'Главная'}, {url: 'rooms.html', name: 'Номера'}, {url: '#', name: 'Ресторан'}, {url: '#', name: 'Конференц-зал'}, {url: 'info.html', name: 'Информация'}, {url: 'contacts.html', name: 'Контакты'}];
+- var nav = [{url: '#', name: 'О компании'}, {url: 'catalog.html', name: 'Каталог'}, {url: '#', name: 'Спецпредложения'}, {url: 'contacts.html', name: 'Контакты'}];
+- var child = [{url: 'about.html', name: 'О компании'}, {url: 'catalog.html', name: 'История компании'}, {url: '#', name: 'Наши сотрудники'}];
 
-mixin navItem(url, name, current)
+mixin navItem(url, name, current, parent)
     li.header-menu__items
-        a.header-menu__links(class=name==current ? 'header-menu__links_active' : '', href=url, title=name)= name
+        a.header-menu__links(class=name==current ? 'header-menu__links_active' : '', class=name==parent ? 'header-menu__links_parent' : '', href=url, title=name)= name
+        if name==parent
+            .header-menu__child-w
+                ul.header-menu__child
+                    each item in child
+                        li.header-menu__child-li
+                            a.header-menu__child-a(href=item.url)= item.name

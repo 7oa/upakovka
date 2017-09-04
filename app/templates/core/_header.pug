@@ -6,10 +6,10 @@ header.header
                     a.header-logo(href="#")
                 .header-ss-w
                     .header-ss
-                        a.header-ss__item(href="#" style="background-image: url('images/vk.png');")
-                        a.header-ss__item(href="#" style="background-image: url('images/inst.png');")
-                        a.header-ss__item(href="#" style="background-image: url('images/facebook.png');")
-                        a.header-ss__item(href="#" style="background-image: url('images/twitter.png');")
+                        a.header-ss__item(href="#" style="background-image: url('images/vk.png');" target="_blank")
+                        a.header-ss__item(href="#" style="background-image: url('images/inst.png');" target="_blank")
+                        a.header-ss__item(href="#" style="background-image: url('images/facebook.png');" target="_blank")
+                        a.header-ss__item(href="#" style="background-image: url('images/twitter.png');" target="_blank")
             .header-right
                 .header-line1
                     .header-address
@@ -23,5 +23,22 @@ header.header
                             .header-address__c3 сб: 10:00 - 14:00
 
                     .header-search
+                        .top-search
+                            form.search-form
+                                input.search-form__input(type="text" placeholder="я ищу...")
+                                input.search-form__submit(type="submit" value="")
 
-                .header-line2 sdf2
+                .header-line2
+                    .header-menu-w
+                        ul.header-menu
+                            each i in nav
+                                +navItem(i.url, i.name, activeMenu, 'О компании')
+                    .header-office
+                        a.btn.btn_s.btn-white(href="#")
+                            span.s-addr Адреса офисов
+                    .header-cart
+                        .cart
+                            .cart__button
+                                a.btn.btn_s.btn-green(href="#")
+                                    span.s-cart Корзина
+                            .cart__count 12

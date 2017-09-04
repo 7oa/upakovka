@@ -1,0 +1,5 @@
+- var footerNav = [{url: '/', name: 'Главная'}, {url: '#', name: 'Спецпредложения'}, {url: 'about.html', name: 'О компании'}, {url: 'basket.html', name: 'Корзина'}, {url: 'catalog.html', name: 'Каталог'}, {url: 'contacts.html', name: 'Контакты'}];
+
+mixin footerMenu(url, name, current)
+    li.footer-menu__items
+        a.footer-menu__links(class=name==current ? 'footer-menu__links_active' : '', href=url, title=name)= name
