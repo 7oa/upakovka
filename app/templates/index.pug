@@ -1,13 +1,153 @@
 extends core/_template
 
 append sharedVars
-	- var activeMenu = 'Главная';
+    - var activeMenu = 'Главная';
 
 block title
-	title Главная
+    title Главная
 
 block content
-	//workarea
-	.workarea workarea
+    //workarea
+    .workarea
+        .index-b1
+            .container
+                .top-slider
+                    .swiper-container.top-slider__full
+                        .swiper-wrapper
+                            .swiper-slide.top-slider__item
+                                .top-slider__full-img(style="background-image:url('images/TEMP/1.jpg')")
+                                .top-slider__full-prev
+                                    .top-slider__full-prev-w
+                                        .top-slider__full-ttl Лукошки из березового шпона
+                                        .top-slider__full-txt Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.
+                                    .top-slider__full-btn
+                                        a.btn.btn_m.btn-red(href="#") Перейти в каталог
+                            .swiper-slide.top-slider__item
+                                .top-slider__full-img(style="background-image:url('images/TEMP/2.jpg')")
+                                .top-slider__full-prev
+                                    .top-slider__full-prev-w
+                                        .top-slider__full-ttl Текст 2
+                                        .top-slider__full-txt Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса. Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.
+                                    .top-slider__full-btn
+                                        a.btn.btn_m.btn-red(href="#") Перейти в каталог
+                            .swiper-slide.top-slider__item
+                                .top-slider__full-img(style="background-image:url('images/TEMP/3.jpg')")
+                                .top-slider__full-prev
+                                    .top-slider__full-prev-w
+                                        .top-slider__full-ttl Текст 3
+                                        .top-slider__full-txt Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.
+                                    .top-slider__full-btn
+                                        a.btn.btn_m.btn-red(href="#") Перейти в каталог
+                    .top-slider__thumbs-w
+                        .top-slider__thumbs
+                            .top-slider__prev.active
+                                .top-slider__prev-img(style="background-image:url('images/TEMP/1.jpg')")
+                            .top-slider__prev
+                                .top-slider__prev-img(style="background-image:url('images/TEMP/2.jpg')")
+                            .top-slider__prev
+                                .top-slider__prev-img(style="background-image:url('images/TEMP/3.jpg')")
+        //end .index-b1
+        .index-b2
+            .container
+                .about
+                    .about__l
+                        ul.about__ul
+                            li.about__li пакеты, пленки, лотки
+                            li.about__li одноразовая посуда
+                            li.about__li ящики, пластиковые банки и емкости
+                            li.about__li скотчи, липкие ленты
+                            li.about__li уборочный инвентарь
+                            li.about__li салфетки, скатерти
+                            li.about__li бытовая химия
+                            li.about__li продукция<br>для медицины,<br>салонов красоты<br>и парикмахерских
+                            li.about__li Все разделы каталога
+                    .about__r
+                        .about__bl
+                            .about__bl-l
+                                .about__bl-ttl Более 4 000 наименований продукции оптом и в розницу
+                                .about__bl-text
+                                    p.
+                                        От маленьких заказов до загрузки полных фур — все наши мощности готовы откликнуться на ваш зов и всегда в вашем полном распоряжении.
+                                    p.
+                                        Надежные технологии производства
+                                        и логистики позволяют нам обеспечивать вас оперативными и бесперебойными поставками
+                                        в максимально сжатые сроки.
+                                .about__bl-btn
+                                    a.btn.btn_l.btn-red(href="#") О компании
+                            .about__bl-r
+                                .about__bl-img(style="background-image:url('images/TEMP/2.jpg')")
 
-	//end workarea
+        //end .index-b2
+        .index-b3
+            .container
+                .edge
+                    .edge__ttl Преимущества работы с нами
+                    .edge__items
+                        .edge__i
+                            .edge__inf
+                                .edge__inf1 20
+                                .edge__inf2.
+                                    лет<br>
+                                    успешной<br>
+                                    работы<br>
+                            .edge__txt.
+                                Обращаясь к нам, Вы можете быть
+                                уверены, что встретите доброжелательное
+                                к себе отношение. Наши профессионалы
+                                всегда готовы прийти к вам на помощь.
+                        .edge__i
+                            .edge__inf
+                                .edge__inf1 4000
+                                .edge__inf3 +
+                            .edge__txt.
+                                Более 4 000 наименований продукции оптом и в розницу в наличии и под заказ. Возможна рассрочка платежа.
+                                Бесперебойные поставки
+                                в максимально сжатые сроки.
+
+                        .edge__i
+                            .edge__inf
+                                .edge__infi(style="background-image:url('images/ecology.png')")
+                                .edge__inf2.
+                                    вся&nbsp;продукция<br>
+                                    экологически<br>
+                                    безопасна
+                            .edge__txt.
+                                Продукция может быть разогрета
+                                в микроволновой печи, при этом
+                                из продукции не будет выделяться никаких вредных для человека
+                                веществ.
+        //end .index-b3
+        .index-b4
+            .container
+                .partners
+                    .partners__ttl Наши партнеры
+                    .partners__prev.
+                        Мы всегда стремимся к долговременным отношениям со своими партнерами, основанным на принципе выигрыша для обеих сторон. В каждом взаимодействии мы готовы к диалогу и рады демонстрировать своим клиентам гибкость и открытость.
+        //end .index-b4
+        .index-b5
+            .reviews
+                .container
+                    .reviews__ttl Отзывы о нашей работе
+                    .reviews__list
+                        .reviews__item
+                            .reviews__foto(style="background-image:url('images/TEMP/foto3.jpg')")
+                            .reviews__name Сергей Виноградов
+                            .reviews__d директор сети быстрого питания
+                            .reviews__txt.
+                                Основная цель нашей компании — это постоянное соблюдение всех наших принципов в работе с потенциальными или действительными клиентами.
+                        .reviews__item
+                            .reviews__foto(style="background-image:url('images/TEMP/foto2.jpg')")
+                            .reviews__name Юлиана Зиновьева
+                            .reviews__d компания «Sushi byte»
+                            .reviews__txt.
+                                Обращаясь к нам, Вы можете быть уверены, что встретите доброжелательное к себе отношение и готовность дружелюбно рассматривать спорные вопросы.
+                        .reviews__item
+                            .reviews__foto(style="background-image:url('images/TEMP/foto1.jpg')")
+                            .reviews__name Ксения Бобылёва
+                            .reviews__d сеть магазинов «Firooser»
+                            .reviews__txt.
+                                Мы являемся лидером по производству одноразовых столовых приборов — вилок, ложек, ножей улучшенных потребительских свойств.
+                    .reviews__btn
+                        a.btn.btn_l.btn-green2(href="#") Показать ещё
+
+    //end workarea

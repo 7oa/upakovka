@@ -1,26 +1,19 @@
 // js jquery
 $(document).ready(function() {
-	//popup
-	$('.js-open-callback').click( function(event){
-		event.preventDefault();
-		$('#callback__overlay').fadeIn(400,
-			function(){
-				$('#callback')
-					.css('display', 'block')
-					.animate({opacity: 1}, 200);
-				$('.callback-inner').animate({"margin-top": "30px"}, 200);
-			});
-		$("body").css('overflow-y','hidden');
+	var galleryTop = new Swiper('.top-slider__full', {
+		effect: 'fade'
 	});
-	$('#callback__close, #callback__overlay').click( function(){
-		$('#callback')
-			.animate({opacity: 0}, 200,
-				function(){
-					$(this).css('display', 'none');
-					$('#callback__overlay').fadeOut(400);
-				}
-			);
-		$('.callback-inner').animate({"margin-top": "0px"}, 200);
-		$("body").css('overflow-y','auto');
+	/*var galleryThumbs = new Swiper('.top-slider__thumbs', {
+		centeredSlides: false,
+		slidesPerView: 'auto',
+		touchRatio: 0.2,
+		slideToClickedSlide: true
+	});
+	galleryTop.params.control = galleryThumbs;
+	galleryThumbs.params.control = galleryTop;*/
+	$(".top-slider__thumbs").on('click', '.top-slider__prev', function(){
+		galleryTop.slideTo($(this).index(), 500);
+		$('.top-slider__prev').removeClass('active');
+		$(this).addClass('active');
 	});
 });

@@ -61,7 +61,7 @@ gulp.task('sass', function() {
 // Работа с js
 gulp.task('js', function() {
     gulp.src('./app/js/scripts.js')
-        //.pipe(rigger())
+        .pipe(rigger())
         //.pipe(uglify())
         .pipe(gulp.dest( dest_path + '/js/'))
         .pipe(connect.reload());

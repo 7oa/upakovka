@@ -3,13 +3,27 @@
   box-sizing: border-box;
   transition: .5s;
   text-transform: uppercase;
+  font-family: 'IdealistSans';
   &_s{
 	height: 34px;
 	padding: 0 30px;
 	border-radius: 17px;
 	font-size: 12px;
 	line-height: 34px;
-	font-family: 'IdealistSans';
+  }
+  &_m{
+	height: 46px;
+	padding: 0 40px;
+	border-radius: 23px;
+	font-size: 14px;
+	line-height: 46px;
+  }
+  &_l{
+	height: 49px;
+	padding: 0 48px;
+	border-radius: 25px;
+	font-size: 16px;
+	line-height: 49px;
   }
 }
 .btn-green{
@@ -25,6 +39,12 @@
 	box-shadow: 0 6px 7px rgba(6, 129, 25, 0.4);
   }
 }
+.btn-green2{
+  background-color: $green-0a;
+  background-image: linear-gradient(180deg, rgba(252, 252, 252, 0.07) 0%, transparent 100%);
+  box-shadow: 0 3px 5px rgba(1, 103, 26, 0.3);
+  color: $white;
+}
 .btn-white{
   background-color: $gb-1;
   border: 1px solid $green-21;
@@ -37,5 +57,18 @@
 	background-color: $gb-1;
 	background-image: linear-gradient(180deg, rgba(252, 252, 252, 0.07) 0%, transparent 100%);
 	box-shadow: 0 6px 7px rgba(6, 129, 25, 0.4);
+  }
+}
+.btn-red{
+  background-color: $red-fc;
+  background-image: linear-gradient(180deg, rgba(252, 252, 252, 0.07) 0%, transparent 100%);
+  box-shadow: 0 3px 5px rgba(173, 33, 0, 0.3);
+  color: $white;
+  &:hover,
+  &:focus{
+	background-color: $red-ea;
+  }
+  &:active{
+	background-color: $red-fc;
   }
 }

@@ -1,5 +1,7 @@
 .header {
-  height: 140px;
+  height: 155px;
+  z-index: 9;
+  position: relative;
 }
 .header-wrapper{
   display: flex;
