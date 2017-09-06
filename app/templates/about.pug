@@ -1,0 +1,81 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Наши сотрудники';
+
+block title
+    title Наши сотрудники
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__current
+                    span О компании
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .about-1
+                    .bl8
+                        .bl8__img(style="background-image:url('images/TEMP/2.jpg')")
+                            .bl8__onimg
+                                .bl8__item
+                                    span.bl8__item-l 40
+                                    span.bl8__item-s сотрудников
+                                .bl8__item
+                                    span.bl8__item-l 20
+                                    span.bl8__item-s лет работы
+                                .bl8__item
+                                    span.bl8__item-s более
+                                    span.bl8__item-m 40000
+                                    span.bl8__item-s наименований<br>продукции
+                                .bl8__item
+                                    span.bl8__item-s более
+                                    span.bl8__item-m 10000
+                                    span.bl8__item-s клиентов
+                        .bl8__content
+                            .bl8__ttl Наша торговая компания ориентирована на высокий уровень обслуживания своих клиентов.
+                            .bl8__txt.
+                                Во главе работы мы ставим качество и оперативность выполнения поставленных задач. И с целью постоянного соответствия запросам потребителей мы регулярно изучаем потребности рынка, работаем над своим ассортиментом и комплексом сервисных услуг.
+                    //end .bl8
+                //end .about-1
+                .about-2
+                    .wepr
+                        .wepr__head
+                            .wepr__ttl Мы предлагаем
+                            .wepr__txt более 4000 наименований товаров от ведущих производителей, в числе которых упаковочные материалы, коробки, емкости, одноразовая посуда, хозяйственные товары
+                        .wepr__body
+                            .wepr__item(style="background-image:url('images/icon-wallet.png')") Удобную<br>форму оплаты
+                            .wepr__item(style="background-image:url('images/icon-van.png')") Бесплатную доставку<br>продукции при заказе от 1000р
+                            .wepr__item(style="background-image:url('images/icon-bags.png')") Широкий ассортимент<br>товара
+                            .wepr__item(style="background-image:url('images/icon-price.png'); background-position-x:20px;") Конкурентоспособные<br>цены
+                    //end .wepr
+                //end .about-2
+                .about-3
+                    .about-news
+                        .about-news__item
+                            .about-news__img(style="background-image:url('images/TEMP/1.jpg')")
+                            .about-news__ttl Для того чтобы поставлять продукцию быстро и эффективно, в наших складских помещениях всегда хранится большой объем товаров.
+                            .about-news__text.
+                                А наша продуманная система логистики позволяет обеспечивать клиентов оперативными и бесперебойными поставками. От маленьких заказов до загрузки полных фургонов.
+                        .about-news__item
+                            .about-news__img(style="background-image:url('images/TEMP/2.jpg')")
+                            .about-news__ttl <a href="#">Квалифицированные сотрудники</a> нашей компании – наше достоинство и гордость!
+                            .about-news__text.
+                                Они всегда открыты для диалога
+                                и в кратчайшие сроки готовы предоставить всю необходимую информацию относительно интересующих позиций каталога, готовых решений, разъяснить детали оформления заказа
+                                и осуществления оплаты.
+                        .about-news__item
+                            .about-news__img(style="background-image:url('images/TEMP/3.jpg')")
+                            .about-news__ttl Забудьте о проблемах с поставками  и завышенных ценах.
+                            .about-news__text.
+                                <a href="#">Упаковочные и расходные материалы</a> «Упаковки» непременно станут залогом успеха Вашего бизнеса, обеспечат лидерство на рынке и блестящие перспективы развития!
+                    //end .about-news
+                //end .about-3
+            //end .inner-page
+
+
+    //end workarea
