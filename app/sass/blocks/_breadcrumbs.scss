@@ -1,0 +1,31 @@
+.breadcrumbs{
+  color: $gray-bd;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: flex;
+  border-bottom: 1px solid $gray-de;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-bottom: 40px;
+  &__link{
+	color: $gray-bd;
+	text-decoration: none;
+	&_home{
+	  background-image: url('images/breadcrumbs-home.png');
+	  width: 12px;
+	  height: 9px;
+	  display: inline-block;
+	}
+  }
+  &__item{
+	&:after{
+	  content:'';
+	  background-image: url('images/breadcrumbs-arrow.png');
+	  width: 5px;
+	  height: 8px;
+	  display: inline-block;
+	  margin-right: 15px;
+	  margin-left: 11px;
+	}
+  }
+}

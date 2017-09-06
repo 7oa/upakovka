@@ -1,0 +1,371 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог';
+
+block title
+    title Каталог
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__current
+                    span каталог
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .cat-cat
+                    .categories
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c1.png')")
+                                    .categories__txt.
+                                        Основными потребителями являются супермаркеты, интернет магазины, бутики, сети ресторанов и кафе
+                                .categories__ttl пакеты, пленки, лотки
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c2.png')")
+                                    .categories__txt.
+                                        Бумажная
+                                        и пластиковая
+                                        одноразовая посуда готова к использованию,
+                                        не требует мытья.
+                                .categories__ttl одноразовая посуда
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c3.png')")
+                                    .categories__txt.
+                                        Не пропускают жир
+                                        и влагу. Подходят
+                                        для разогрева
+                                        в микроволновой
+                                        печи.
+                                .categories__ttl ящики, пластиковые банки и емкости
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        .categories__banner
+                            .banner(style="background-image:url('images/banner1.png')")
+                                .banner__img-w
+                                .banner__txt а ещё у нас есть кое-что интересное для вас...
+                                .banner__btn
+                                    a.btn.btn_l.btn-red(href="#") смотреть спецпредложения
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c4.png')")
+                                    .categories__txt.
+                                        Значимость этих проблем настолько очевидна, что информационно
+                                        обеспечение нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+                                .categories__ttl скотчи, липкие ленты
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c5.png')")
+                                    .categories__txt.
+                                        Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                                .categories__ttl уборочный инвентарь
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c6.png')")
+                                    .categories__txt.
+                                        Скатерти, салфетки,
+                                        и прочие необходимые мелочи, без которых
+                                        не обойдется ни одно  торжество.
+                                .categories__ttl салфетки, скатерти
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c7.png')")
+                                    .categories__txt.
+                                        Значимость этих проблем настолько очевидна, что информационно
+                                        обеспечение нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+                                .categories__ttl скотчи, липкие ленты
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c8.png')")
+                                    .categories__txt.
+                                        Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                                .categories__ttl уборочный инвентарь
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c9.png')")
+                                    .categories__txt.
+                                        Скатерти, салфетки,
+                                        и прочие необходимые мелочи, без которых
+                                        не обойдется ни одно  торжество.
+                                .categories__ttl салфетки, скатерти
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c10.png')")
+                                    .categories__txt.
+                                        Значимость этих проблем настолько очевидна, что информационно
+                                        обеспечение нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+                                .categories__ttl скотчи, липкие ленты
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c11.png')")
+                                    .categories__txt.
+                                        Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                                .categories__ttl уборочный инвентарь
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c12.png')")
+                                    .categories__txt.
+                                        Скатерти, салфетки,
+                                        и прочие необходимые мелочи, без которых
+                                        не обойдется ни одно  торжество.
+                                .categories__ttl салфетки, скатерти
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c13.png')")
+                                    .categories__txt.
+                                        Значимость этих проблем настолько очевидна, что информационно
+                                        обеспечение нашей деятельности в значительной степени обуславливает создание направлений прогрессивного развития.
+                                .categories__ttl скотчи, липкие ленты
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c14.png')")
+                                    .categories__txt.
+                                        Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                                .categories__ttl уборочный инвентарь
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c15.png')")
+                                    .categories__txt.
+                                        Скатерти, салфетки,
+                                        и прочие необходимые мелочи, без которых
+                                        не обойдется ни одно  торжество.
+                                .categories__ttl салфетки, скатерти
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c16.png')")
+                                    .categories__txt.
+                                        Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
+                                .categories__ttl уборочный инвентарь
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                        a.categories__item(href="#")
+                            .categories__visible
+                                .categories__prev
+                                    .categories__img-w
+                                        .categories__img(style="background-image:url('images/TEMP/c17.png')")
+                                    .categories__txt.
+                                        Скатерти, салфетки,
+                                        и прочие необходимые мелочи, без которых
+                                        не обойдется ни одно  торжество.
+                                .categories__ttl салфетки, скатерти
+                            .categories__hidden
+                                ul.categories__ul
+                                    li.categories__li Наборы одноразовой посуды
+                                    li.categories__li Тарелки
+                                    li.categories__li Упаковка, принадлежности  для суши
+                                    li.categories__li Столовые приборы
+                                    li.categories__li Зубочистки, палочки для шашлыка, палочки для еды
+                                    li.categories__li Стаканы, стопки, чашки
+                                    li.categories__li Берестяные лукошки
+                                    li.categories__li Упаковка для фаст-фуда
+                    //end .categories
+                //end .cat-cat
+                .cat-bottom
+                    .bl4
+                        .bl4__img(style="background-image:url('images/TEMP/1.jpg')")
+                        .bl4__content
+                            .bl4__ttl Более 4 000 наименований продукции оптом и в розницу
+                            .bl4__txt
+                                p От маленьких заказов до загрузки полных фур — все наши мощности готовы откликнуться на ваш зов и всегда в вашем полном распоряжении.
+
+                                p Для максимально прибыльного ведения дела вам требуется правильно использовать складские площади и управлять товарными запасами эффективно. Для этого мы готовы предоставить вам крайне низкий порог минимального заказа, который позволит вам закупить в склад именно столько товара, сколько требуется.Для максимально прибыльного ведения дела вам требуется правильно использовать складские площади и управлять товарными запасами эффективно. Для этого мы готовы предоставить вам крайне низкий порог минимального заказа, который позволит вам закупить в склад именно столько товара, сколько требуется.Для максимально прибыльного ведения дела вам требуется правильно использовать складские площади и управлять товарными запасами эффективно. Для этого мы готовы предоставить вам крайне низкий порог минимального заказа, который позволит вам закупить в склад именно столько товара, сколько требуется.
+                    //end .bl4
+                //end .cat-bottom
+            //end .inner-page
+
+
+    //end workarea

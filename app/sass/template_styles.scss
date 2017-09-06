@@ -13,8 +13,12 @@
 @import "core/images";
 @import "core/buttons";
 
-@import "blocks/callback";
+@import "blocks/breadcrumbs";
+@import "blocks/categories";
+@import "blocks/banner";
+@import "blocks/bl4";
 
 @import "pages/index";
+@import "pages/catalog";
 
 @import "core/adaptive";

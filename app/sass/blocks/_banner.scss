@@ -1,0 +1,33 @@
+.banner{
+  width: 100%;
+  height: 131px;
+  background-color: $gb-1;
+  border: 2px solid $white;
+  border-radius: 4px;
+  box-shadow: 0 11px 13px rgba(64, 64, 64, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  overflow: hidden;
+  @include bg-img(cover);
+  &__img-w{
+	flex: 0 0 auto;
+	width: 360px;
+  }
+  &__txt{
+	font-family: 'IdealistSans';
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: uppercase;
+	flex: 0 0 auto;
+	width: 360px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+  }
+  &__btn{
+	flex: 1 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+}
