@@ -1,0 +1,89 @@
+.pers-1{
+  margin-bottom: 75px;
+}
+.pers-2{
+  margin-bottom: 96px;
+}
+.person{
+  display: flex;
+  flex-wrap: wrap;
+  &__item{
+	flex: 0 0 auto;
+	margin: 90px 15px 58px;
+	width: 358px;
+	height: 320px;
+	background-color: $white;
+	border: 1px solid $gray-e5;
+	border-radius: 4px;
+	box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+	position: relative;
+  }
+  &__nb{
+	height: 191px;
+	background-color: $green-21;
+	background-image: url('images/patterns/green-pattern.jpg');
+	text-align: center;
+	padding-top: 89px;
+	box-sizing: border-box;
+	border-radius: 4px 4px 0 0;
+	border-bottom: 1px solid $gray-e5;
+  }
+  &__foto{
+	width: 150px;
+	height: 150px;
+	border: 10px solid $green-0e;
+	background-color: $black;
+	box-shadow: 0 11px 13px rgba(64, 64, 64, 0.25);
+	@include bg-img(cover);
+	border-radius: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: -90px;
+	right: 0;
+	left: 0;
+  }
+  &__fio{
+	font-family: 'IdealistSans';
+	font-size: 16px;
+	line-height: 26px;
+	color: $white;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+  }
+  &__d{
+	font-family: 'Lato';
+	font-size: 12px;
+	line-height: 18px;
+	color: $white;
+	opacity: 0.55;
+  }
+  &__cb{
+	padding-top: 33px;
+	padding-left: 60px;
+	color: $gray-4e;
+	font-family: 'Lato';
+	font-size: 16px;
+	line-height: 16px;
+	a{
+	  color: $gray-4e;
+	}
+  }
+  &__mail{
+	background-image: url('images/green-mail.png');
+	background-repeat: no-repeat;
+	background-position-y: center;
+	padding-left: 40px;
+	height: 19px;
+	line-height: 19px;
+	margin-bottom: 18px;
+  }
+  &__tel{
+	background-image: url('images/green-phone.png');
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: center;
+	padding-left: 40px;
+	height: 25px;
+	line-height: 25px;
+  }
+}
