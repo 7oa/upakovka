@@ -1,17 +1,30 @@
 script(src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU")
 script.
-    ymaps.ready(init);
-    function init () {
-        var map = new ymaps.Map("map", {
-            center: [64.5422580573521,40.567459999999954],
-            zoom: 17
-        });
-        var placemark = new ymaps.Placemark([64.54225574861084,40.56746536441798], {
-            balloonContent: '163 000, Росcия, г.Архангельск, ул.Тимме, д.3',
-        }, {
-            iconImageHref: 'images/balloon.png',
-            iconImageSize: [182, 182],
-            iconImageOffset: [-118,-110]
-        });
-        map.geoObjects.add(placemark);
-    }
+	ymaps.ready(init);
+	function init() {
+		var mapArkh = new ymaps.Map("map-arkh", {
+			center: [64.55470869651762,40.53541704467763],
+			zoom: 13
+		});
+		var placemark = new ymaps.Placemark([64.54119105734932,40.54696949999999], {
+			balloonContent: 'ул. Выучейского д. 57 / 2'
+		});
+		var placemark2 = new ymaps.Placemark([64.55759855729409,40.52012799999999], {
+			balloonContent: 'Шубина д. 2'
+		});
+		var placemark3 = new ymaps.Placemark([64.56068955730211,40.574727499999895], {
+			balloonContent: 'Окружное шоссе, д. 9'
+		});
+		mapArkh.geoObjects.add(placemark);
+		mapArkh.geoObjects.add(placemark2);
+		mapArkh.geoObjects.add(placemark3);
+
+		var mapSev = new ymaps.Map("map-sev", {
+			center: [64.56522105728126,39.84657099999989],
+			zoom: 17
+		});
+		var placemark4 = new ymaps.Placemark([64.56522105728126,39.84657099999989], {
+			balloonContent: 'ул. Выучейского д. 57 / 2'
+		});
+		mapSev.geoObjects.add(placemark4);
+	}

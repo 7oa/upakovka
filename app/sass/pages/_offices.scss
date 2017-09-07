@@ -1,0 +1,133 @@
+.offices-page{
+  padding-bottom: 100px;
+  &__head{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 15px 30px;
+  }
+  &__h1{
+	color: $gray-4e;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: 'IdealistSans';
+  }
+  &__tabs{
+	display: flex;
+  }
+  &__tab{
+	height: 57px;
+	display: inline-block;
+	padding: 0 20px;
+	color: $green-22;
+	font-size: 24px;
+	line-height: 57px;
+	font-family: 'IdealistSans';
+	cursor: pointer;
+	margin: 0 10px;
+	span{
+	  border-bottom: 4px dotted $green-22;
+	}
+	&.selected{
+	  background-color: $gb-1;
+	  border: 1px solid $green-21;
+	  border-radius: 5px;
+	  box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+	  color: $gray-4e;
+	  span{
+		border-color: transparent;
+	  }
+	}
+	&:last-of-type{
+	  margin-right: 0;
+	}
+  }
+  &__row{
+	display: flex;
+	flex-wrap: wrap;
+  }
+  &__p{
+	display: none;
+	&.selected{
+	  display: block;
+	}
+  }
+  &__bl{
+	margin: 0 15px 30px;
+	flex: 0 0 auto;
+	background-color: $white;
+	border: 1px solid $gray-e5;
+	border-radius: 4px;
+	box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+	box-sizing: border-box;
+	overflow: hidden;
+  }
+  &__bl12{
+	width: 1140px;
+  }
+  &__bl8{
+	width: 750px;
+  }
+  &__bl4{
+	width: 360px;
+  }
+  &__bl-top{
+	min-height: 82px;
+  }
+  &__bl-img{
+	@include bg-img(cover);
+	height: 190px;
+	border-bottom: 1px solid $gray-e5;
+  }
+  &__bl-body{
+	height: 278px;
+	box-sizing: border-box;
+	padding: 24px 37px 0;
+	font-size: 16px;
+  }
+  &__bl-addr{
+	color: $gray-4e;
+	font-family: 'IdealistSans';
+	line-height: 26px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+  }
+  &__bl-prev{
+	color: $gray-af;
+	font-family: 'IdealistSans';
+	line-height: 20px;
+	margin-bottom: 14px;
+  }
+  &__bl-tel{
+	background-image: url(images/green-phone.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	line-height: 30px;
+	font-family: 'Lato';
+	color: $gray-4e;
+	background-position-y: 4px;
+	margin-bottom: 20px;
+  }
+  &__bl-time{
+	background-image: url(images/green-clock.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	line-height: 24px;
+	display: flex;
+	font-family: 'Lato';
+	color: $gray-4e;
+	text-transform: uppercase;
+  }
+  &__bl-time-d{
+	width: 70px;
+	flex: 0 0 auto;
+  }
+}
+#map-arkh{
+  height: 430px;
+  width: 100%;
+}
+#map-sev{
+  height: 470px;
+  width: 100%;
+}

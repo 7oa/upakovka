@@ -15,4 +15,12 @@ $(document).ready(function() {
 		slidesPerView: 5,
 		spaceBetween: 60
 	});
+
+	$(".js-tab").click(function(){
+		var tab = $(this).data("tab");
+		$(".js-tab.selected").removeClass("selected");
+		$(this).addClass("selected");
+		$(".js-page.selected").removeClass("selected");
+		$("." + tab).addClass("selected");
+	});
 });

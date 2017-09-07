@@ -1,0 +1,110 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Адреса офисов';
+
+block title
+    title Адреса офисов
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__item(href="#")
+                    a.breadcrumbs__link О компании
+                .breadcrumbs__current
+                    span Адреса офисов
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .offices-page
+                    .offices-page__head
+                        .offices-page__h1
+                            h1 Адреса офисов
+                        .offices-page__tabs
+                            .offices-page__tab.selected.js-tab(data-tab="office1")
+                                span Архангельск
+                            .offices-page__tab.js-tab(data-tab="office2")
+                                span Северодвинск
+                    //end .offices-page__head
+                    .offices-page__body
+                        .offices-page__p.js-page.office1
+                            .offices-page__row
+                                .offices-page__bl.offices-page__bl12
+                                    #map-arkh
+                                .offices-page__bl.offices-page__bl4
+                                    .offices-page__bl-img(style="background-image:url('images/TEMP/1.jpg')")
+                                    .offices-page__bl-body
+                                        .offices-page__bl-top
+                                            .offices-page__bl-addr ул. Выучейского д. 57 / 2
+                                            .offices-page__bl-prev 1 этаж, вход с торца оптовый и розничный отдел
+                                        .offices-page__bl-tel.
+                                            +7 (8182) 66-11-55<br>
+                                            +7 (911) 871-27-72
+                                        .offices-page__bl-time
+                                            .offices-page__bl-time-d.
+                                                пн-пт:<br>
+                                                сб:
+                                            .offices-page__bl-time-t.
+                                                10:00 - 18:00<br>
+                                                10:00 - 14:00
+                                .offices-page__bl.offices-page__bl4
+                                    .offices-page__bl-img(style="background-image:url('images/TEMP/2.jpg')")
+                                    .offices-page__bl-body
+                                        .offices-page__bl-top
+                                            .offices-page__bl-addr Шубина д. 2
+                                            .offices-page__bl-prev 1 этаж
+                                        .offices-page__bl-tel.
+                                            +7 (8182) 41-40-20
+                                        .offices-page__bl-time
+                                            .offices-page__bl-time-d.
+                                                пн-пт:<br>
+                                                сб:
+                                            .offices-page__bl-time-t.
+                                                10:00 - 18:00<br>
+                                                10:00 - 14:00
+                                .offices-page__bl.offices-page__bl4
+                                    .offices-page__bl-img(style="background-image:url('images/TEMP/3.jpg')")
+                                    .offices-page__bl-body
+                                        .offices-page__bl-top
+                                            .offices-page__bl-addr Окружное шоссе, д. 9
+                                            .offices-page__bl-prev 1 этаж
+                                        .offices-page__bl-tel.
+                                            +7 (911) 871-26-62
+                                        .offices-page__bl-time
+                                            .offices-page__bl-time-d.
+                                                пн-пт:<br>
+                                                сб:
+                                            .offices-page__bl-time-t.
+                                                10:00 - 18:00<br>
+                                                10:00 - 14:00
+                        //end .offices-page__p
+                        .offices-page__p.js-page.selected.office2
+                            .offices-page__row
+                                .offices-page__bl.offices-page__bl8
+                                    #map-sev
+                                .offices-page__bl.offices-page__bl4
+                                    .offices-page__bl-img(style="background-image:url('images/TEMP/2.jpg')")
+                                    .offices-page__bl-body
+                                        .offices-page__bl-top
+                                            .offices-page__bl-addr Беломорский проспект, 44 Б
+                                            .offices-page__bl-prev 1 этаж
+                                        .offices-page__bl-tel.
+                                            +7 (911) 553-85-76
+                                        .offices-page__bl-time
+                                            .offices-page__bl-time-d.
+                                                пн-пт:<br>
+                                                сб:
+                                            .offices-page__bl-time-t.
+                                                10:00 - 18:00<br>
+                                                10:00 - 14:00
+                        //end .offices-page__p
+                        //map script
+                        include blocks/_map
+                        //end map script
+                    //end .offices-page__body
+            //end .inner-page
+    //end workarea
