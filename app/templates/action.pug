@@ -1,0 +1,139 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Наши сотрудники';
+
+block title
+    title Наши сотрудники
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__item(href="#")
+                    a.breadcrumbs__link Каталог
+                .breadcrumbs__current
+                    span Специальные предложения
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .action-1
+                    .top-slider
+                        .swiper-container.top-slider__full
+                            .swiper-wrapper
+                                .swiper-slide.top-slider__item
+                                    .top-slider__full-img(style="background-image:url('images/TEMP/2.jpg')")
+                                    .top-slider__full-prev
+                                        .top-slider__full-prev-w
+                                            .top-slider__full-ttl Готовое<br>решение<br>для переезда
+                                            .top-slider__full-txt Профессиональная упаковка — гарантия бережной перевозки вашего имущества при переезде на новое место работы или жительства
+                                        .top-slider__full-btn
+                                            a.btn.btn_m.btn-red(href="#") Перейти к предложению
+                                .swiper-slide.top-slider__item
+                                    .top-slider__full-img(style="background-image:url('images/TEMP/1.jpg')")
+                                    .top-slider__full-prev
+                                        .top-slider__full-prev-w
+                                            .top-slider__full-ttl Текст 2
+                                            .top-slider__full-txt Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса. Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.
+                                        .top-slider__full-btn
+                                            a.btn.btn_m.btn-red(href="#") Перейти в каталог
+                                .swiper-slide.top-slider__item
+                                    .top-slider__full-img(style="background-image:url('images/TEMP/3.jpg')")
+                                    .top-slider__full-prev
+                                        .top-slider__full-prev-w
+                                            .top-slider__full-ttl Текст 3
+                                            .top-slider__full-txt Лоток из дерева может стать альтернативой при фасовке продуктов питания. Не выделяет токсинов, постороннего запаха и привкуса.
+                                        .top-slider__full-btn
+                                            a.btn.btn_m.btn-red(href="#") Перейти в каталог
+                        //end .top-slider__full
+                        .top-slider__thumbs-w
+                            .top-slider__thumbs
+                                .top-slider__prev.active
+                                    .top-slider__prev-img(style="background-image:url('images/TEMP/2.jpg')")
+                                .top-slider__prev
+                                    .top-slider__prev-img(style="background-image:url('images/TEMP/1.jpg')")
+                                .top-slider__prev
+                                    .top-slider__prev-img(style="background-image:url('images/TEMP/3.jpg')")
+                        //end .top-slider__thumbs-w
+                    //end .top-slider
+                //end .action-1
+                .action-2
+                    .action
+                        .action__h Специальные предложения
+                        .action__list
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl ГОТОВОЕ РЕШЕНИЕ  ДЛЯ ПЕРЕЕЗДА
+                                .action__txt Профессиональная упаковка – гарантия бережной перевозки вашего имущества при переезде на новое место работы или жительства
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/1.jpg')")
+                                .action__ttl трехсекционные контейнеры из сахарного тростника
+                                .action__txt В современном мире продукция из экологичных и биоразлагаемых материалов  вытесняет пластиковую
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/3.jpg')")
+                                .action__ttl Наборы для Retail  по цене производителя
+                                .action__txt Наборы биотарелок, биоложек, биовилок, био- и эконожей, наборы одноразовой посуды по цене производителя
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl Большое пополнение ассортимента салфеток
+                                .action__txt В наличии в размере 33х33см есть двуслойные салфетки в белом, желтом, красном, синем, зеленом, коричневом, бордовом, черном
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl Ваш логотип на наборе одноразовой посуды
+                                .action__txt На всю посуду из набора может быть нанесен логотип вашей компании или названия мероприятия
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl Удобные наборы деревянной посуды
+                                .action__txt Набор деревянной одноразовой посуды – это готовый к использованию комплект, который содержит все необходимые ... столовые приборы и посуду для одной или нескольких персон
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl Ваш логотип на наборе одноразовой посуды
+                                .action__txt На всю посуду из набора может быть нанесен логотип вашей компании или названия мероприятия
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                            .action__item
+                                .action__img(style="background-image:url('images/TEMP/2.jpg')")
+                                .action__ttl Удобные наборы деревянной посуды
+                                .action__txt Набор деревянной одноразовой посуды – это готовый к использованию комплект, который содержит все необходимые ... столовые приборы и посуду для одной или нескольких персон
+                                .action__btn
+                                    a.btn.btn_s.btn-green(href="#") Перейти к предложению
+                            //end .action__item
+                        //end action__list
+                    //end .action
+                //end .action-2
+                .action-pagination
+                    .pagination
+                        a.pagination__prev(href="#")
+                        .pagination__pages
+                            a.pagination__page.pagination__page_active(href="#") 1
+                            a.pagination__page(href="#") 2
+                            a.pagination__page(href="#") 3
+                        a.pagination__next(href="#")
+                    //end .pagination
+                //end .action-pagination
+            //end .inner-page
+
+
+    //end workarea
