@@ -1,0 +1,37 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Корзина';
+
+block title
+    title Корзина
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__item(href="#")
+                    a.breadcrumbs__link Каталог
+                .breadcrumbs__current
+                    span Корзина
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .basket-page
+                    .basket-page__h1
+                        h1 Контактная информация
+                    .basket
+                        .basket__item
+                            .basket__img
+                            .basket__body
+                                .basket__line1
+                                    .basket__ttl
+                                    .basket__art
+                                .basket__line2
+
+                //end .basket-page
+            //end .inner-page
+    //end workarea

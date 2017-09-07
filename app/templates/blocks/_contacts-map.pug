@@ -1,0 +1,13 @@
+script(src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU")
+script.
+	ymaps.ready(init);
+	function init() {
+		var map = new ymaps.Map("contacts-map", {
+			center: [64.55470869651762,40.53541704467763],
+			zoom: 17
+		});
+		var placemark = new ymaps.Placemark([64.54119105734932,40.54696949999999], {
+			balloonContent: 'ул. Выучейского д. 57 / 2'
+		});
+		map.geoObjects.add(placemark);
+	}

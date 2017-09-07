@@ -1,0 +1,102 @@
+.input{
+  height: 46px;
+  border-radius: 23px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  line-height: 46px;
+  font-family: 'IdealistSans';
+  font-size: 18px;
+  transition: .5s;
+  width: 100%;
+  &_gray{
+	background-color: $white;
+	border: 1px solid $gray-c9;
+	&:focus{
+	  border-color: $green-21;
+	}
+  }
+}
+.textarea{
+  border-radius: 23px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  line-height: 20px;
+  font-family: 'IdealistSans';
+  font-size: 18px;
+  transition: .5s;
+  width: 100%;
+  &_gray{
+	background-color: $white;
+	border: 1px solid $gray-c9;
+	&:focus{
+	  border-color: $green-21;
+	}
+  }
+}
+.form{
+  &__row{
+	display: flex;
+	margin-bottom: 30px;
+  }
+  &__col{
+	flex: 0 0 auto;
+	margin-right: 33px;
+	&:last-of-type{
+	  margin-right: 0;
+	}
+  }
+  &__label{
+	display: flex;
+	margin-bottom: 17px;
+	padding-left: 10px;
+
+  }
+  &__checkbox{
+	display: flex;
+  }
+}
+.checkbox{
+  flex: 0 0 auto;
+  width: 30px;
+}
+.checkbox-label{
+  flex: 1 1 auto;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'IdealistSans';
+  a{
+	text-decoration: underline;
+  }
+  &_gray{
+	color: $gray-a0;
+	a{
+	  color: $blue-27;
+	  &:hover{
+		text-decoration: none;
+	  }
+	}
+  }
+}
+
+.label-ttl{
+  font: 16px/18px "IdealistSans";
+  margin-right: 10px;
+  text-transform: uppercase;
+  &_gray{
+	color: $gray-4e;
+  }
+}
+.label-req{
+  font: 11px/16px "IdealistSans";
+  &_gray{
+	color: $gray-4e;
+	opacity: 0.53;
+  }
+}
+.send-icon{
+  background-image: url('images/white-send.png');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  display: inline-block;
+  padding-left: 25px;
+}
