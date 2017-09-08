@@ -39,3 +39,16 @@ h1{
   line-height: 30px;
   font-family: 'IdealistSans';
 }
+.with-menu{
+  display: flex;
+}
+.l-menu{
+  flex: 0 0 auto;
+  width: 264px;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 3px;
+}
+.r-content{
+  flex: 0 1 auto;
+}

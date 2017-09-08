@@ -15,17 +15,17 @@
 	margin-left: 80px;
 	background-position: -8px 0;
   }
-  &__pages{
-
-  }
   &__page{
 	font-size: 24px;
 	line-height: 24px;
 	font-family: 'Lato';
 	font-weight: bold;
 	color: $gray-ad;
-	text-decoration: underline;
 	margin: 0 8px;
+	text-decoration: underline;
+	&_span{
+	  text-decoration: none;
+	}
 	&_active{
 	  text-decoration: none;
 	  color: $red-fc;

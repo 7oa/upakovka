@@ -1,0 +1,61 @@
+.categories-submenu{
+  display: none;
+  margin-bottom: 39px;
+  &__item{
+	margin-bottom: 15px;
+  }
+  &__link{
+	font-size: 14px;
+	font-family: 'IdealistSans';
+	color: $gray-4e;
+	transition: .3s;
+	&.active,
+	&:hover{
+	  color: $red-fc;
+	}
+  }
+}
+.categories-menu{
+  margin-bottom: 60px;
+  &__link{
+	font: 16px/26px 'IdealistSans';
+	text-transform: uppercase;
+	color: $gray-4e;
+	position: relative;
+	display: flex;
+	margin-bottom: 14px;
+	span{
+	  margin-right: 10px;
+	}
+	&:after{
+	  content: '';
+	  background-image: url('images/menu-arrow.png');
+	  background-size: 8px 5px;
+	  background-repeat: no-repeat;
+	  width: 10px;
+	  height: 10px;
+	  display: block;
+	  flex: 0 0 auto;
+	  margin-top: 8px;
+	  background-position: center;
+	}
+  }
+  &__item{
+	background-image: url('images/red-dots.png');
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	background-position-x: 8px;
+	background-position-y: 7px;
+	margin-bottom: 27px;
+	&.active{
+	  .categories-submenu{
+		display: block;
+	  }
+	  .categories-menu__link{
+		&:after{
+		  transform: rotate(180deg);
+		}
+	  }
+	}
+  }
+}
