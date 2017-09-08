@@ -22,16 +22,130 @@ block content
             .inner-page
                 .basket-page
                     .basket-page__h1
-                        h1 Контактная информация
+                        h1 Корзина
                     .basket
                         .basket__item
-                            .basket__img
+                            .basket__img-w
+                                .basket__img(style="background-image:url('http://xn----7sbbnvbmsehciq5dyb.xn--p1ai/wp-content/uploads/2014/09/tarelka_gzhel.png')")
                             .basket__body
                                 .basket__line1
-                                    .basket__ttl
-                                    .basket__art
+                                    .basket__inf
+                                        a.basket__ttl(href="#") Одноразовая тарелка 7’’
+                                        .basket__art 347RP10WHSS
+                                    .basket__count
+                                        input.value(type="number" min="1" value="10")
+                                    .basket__price
+                                        span.basket__price-int.price 3.
+                                        span.basket__price-kop.price 96
+                                        span.basket__price-rub.rub И
+                                        span.basket__price-sep.sep /
+                                        span.basket__price-st.st шт
                                 .basket__line2
-
+                                    .basket__txt.
+                                        Тарелка овальная – выполнена из экологически чистой древесины тополя. Не проводят тепло, не бьется, приятная на ощупь, легкая. Может быть использована для пикников, торжественных мероприятий и в сфере общественного питания. Экологически чистый продукт безопасный как для человека, так и для окружающей среды.
+                                    .basket__sum
+                                        span.basket__sum-int.price 39.
+                                        span.basket__sum-kop.price 60
+                                        span.basket__sum-rub.rub И
+                            //end .basket__body
+                            button.basket__del
+                        //end .basket__item
+                        .basket__item
+                            .basket__img-w
+                                .basket__img(style="background-image:url('http://www.tarelki.com.ua/rbigimg/138823.jpg')")
+                            .basket__body
+                                .basket__line1
+                                    .basket__inf
+                                        a.basket__ttl(href="#") Одноразовая тарелочка для кекса
+                                        .basket__art TT010-3
+                                    .basket__count
+                                        input.value(type="number" min="1" value="20")
+                                    .basket__price
+                                        span.basket__price-int.price 5.
+                                        span.basket__price-kop.price 22
+                                        span.basket__price-rub.rub И
+                                        span.basket__price-sep.sep /
+                                        span.basket__price-st.st шт
+                                .basket__line2
+                                    .basket__txt.
+                                        Круглая деревянная тарелка 190х15 мм выполнена из экологически чистой древесины тополя. Не проводят тепло, не бьётся, приятная на ощупь, лёгкая. Может быть использована для пикников, торжественных мероприятий и в сфере общественного питания. Экологически чистый продукт, безопасный для человека и окружающей среды.
+                                    .basket__sum
+                                        span.basket__sum-int.price 104.
+                                        span.basket__sum-kop.price 40
+                                        span.basket__sum-rub.rub И
+                            //end .basket__body
+                            button.basket__del
+                        //end .basket__item
+                        .basket__item
+                            .basket__img-w
+                                .basket__img(style="background-image:url('https://ecovilka.com/files/2017/03/3ed7b520a808b543c51476d1bfffa0cb-241x241.jpg')")
+                            .basket__body
+                                .basket__line1
+                                    .basket__inf
+                                        a.basket__ttl(href="#") Одноразовый контейнер 600 мл.
+                                        .basket__art БУК900
+                                    .basket__count
+                                        input.value(type="number" min="1" value="10")
+                                    .basket__price
+                                        span.basket__price-int.price 3.
+                                        span.basket__price-kop.price 26
+                                        span.basket__price-rub.rub И
+                                        span.basket__price-sep.sep /
+                                        span.basket__price-st.st шт
+                                .basket__line2
+                                    .basket__txt.
+                                        Контейнер изготовлен из экологичного крафт картона. Не пропускает жир и влагу, полностью ламинирован с внутренней стороны. Подходит для разогрева в микроволновой печи. Поставляется в собранном виде. Возможно нанесение печати и выполнение контейнера в любых геометрических размерах. Такой контейнер идеально подходит для доставки готовых блюд. Избавляет от ... необходимости использования посуды. Будет красиво смотреться на витрине. Такой контейнер идеально подходит для доставки готовых блюд. Избавляет от ... необходимости использования посуды. Будет красиво смотреться на витрине.
+                                    .basket__sum
+                                        span.basket__sum-int.price 32.
+                                        span.basket__sum-kop.price 60
+                                        span.basket__sum-rub.rub И
+                            //end .basket__body
+                            button.basket__del
+                        //end .basket__item
+                    //end .basket
+                    .basket-form
+                        .basket-form__header
+                            .basket-form__h Оформить заказ
+                        .basket-form__body
+                            .basket-form__l
+                                form.form
+                                    .form__row
+                                        .form__col(style="width:260px;")
+                                            .form__label
+                                                .label-ttl.label-ttl_green Ваше имя
+                                                .label-req.label-req_green обязательно
+                                            input.input.input_green(type="text")
+                                        .form__col(style="width:170px;")
+                                            .form__label
+                                                .label-ttl.label-ttl_green Телефон
+                                                .label-req.label-req_green обязательно
+                                            input.input.input_green#phone(type="text" placeholder="+7 (___) ___-__-__")
+                                        .form__col(style="width:240px;")
+                                            .form__label
+                                                .label-ttl.label-ttl_green Электронная почта
+                                            input.input.input_green(type="text")
+                                    .form__row
+                                        .form__col(style="width:100%")
+                                            .form__label
+                                                .label-ttl.label-ttl_green Дополнительная информация
+                                            textarea.textarea.textarea_green(style="height:160px;")
+                                            .basket-form__disclaimer.
+                                                <span>*</span> — минимальная стоимость заказа, после оформления наш менеджер свяжется с вами для уточнения всех деталей
+                            .basket-form__r
+                                .basket-form__sum
+                                    span.basket-form__int.price 179.
+                                    span.basket-form__kop.price 56
+                                    span.basket-form__rub.rub И
+                                    span.basket-form__z *
+                                .basket-form__sum-ttl общая сумма заказа
+                                .basket-form__check
+                                    .form__checkbox
+                                        input.checkbox(type="checkbox" id="chb")
+                                        label.checkbox-label.checkbox-label_green(for="chb") Отправляя заявку, я <a href="#">соглашаюсь на обработку персональных данных</a>, в соответствии с <a href="#">политикой конфиденциальности</a>
+                                .basket-form__btn
+                                    button.btn.btn_m.btn-red(type="submit") Оформить заказ
+                        //end .basket-form__body
+                    //.basket-form
                 //end .basket-page
             //end .inner-page
     //end workarea
