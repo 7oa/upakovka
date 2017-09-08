@@ -176,11 +176,104 @@
   &__search-ttl{
 	margin: 0 15px 26px;
   }
+  &__body-list{
+	margin-bottom: 60px;
+  }
 }
 .to-basket{
   display: flex;
   justify-content: center;
   &__input{
 	margin-right: 15px;
+  }
+}
+.list-item{
+  display: flex;
+  margin: 0 15px 30px;
+  height: 172px;
+  background-color: $white;
+  border: 1px solid $gray-e5;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+  position: relative;
+  &.action{
+	height: 192px;
+	&:before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 18px;
+	  width: 82px;
+	  height: 65px;
+	  background-image: url('images/act.png');
+	  background-repeat: no-repeat;
+	  background-position: top center;
+	}
+  }
+  &__img{
+	@include bg-img(contain);
+	width: 180px;
+	flex: 0 0 auto;
+	margin-right: 15px;
+  }
+  &__info{
+	width: 457px;
+	flex: 0 0 auto;
+  }
+  &__info-h{
+	padding-top: 25px;
+	border-bottom: 1px solid $gray-de;
+	height: 65px;
+	overflow: hidden;
+	box-sizing: border-box;
+  }
+  &__ttl{
+	font: 16px/18px 'IdealistSans';
+	color: $gray-4e;
+	text-transform: uppercase;
+  }
+  &__art{
+	color: $gray-c0;
+	font: 10px/18px 'Lato';
+  }
+  &__info-b{
+	color: $gray-7b;
+	display: flex;
+	padding-top: 10px;
+	font: 12px/18px 'Lato';
+  }
+  &__info-l{
+	width: 143px;
+	flex: 0 0 auto;
+  }
+  &__price{
+	margin-bottom: 13px;
+  }
+  &__buy{
+	flex: 0 1 auto;
+	padding-top: 25px;
+	padding-left: 32px;
+  }
+  &__int{
+	font-size: 28px;
+  }
+  &__kop{
+	font-size: 22px;
+  }
+  &__rub{
+	font-size: 21px;
+  }
+  &__sep{
+	font-size: 21px;
+  }
+  &__st{
+	font-size: 13px;
+  }
+  &__count{
+	margin-bottom: 12px;
+	.value{
+	  width: 116px;
+	  text-align: center;
+	}
   }
 }
