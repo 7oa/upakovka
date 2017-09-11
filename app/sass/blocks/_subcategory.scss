@@ -89,6 +89,7 @@
 	border-bottom: 1px solid $gray-e5;
 	height: 203px;
 	@include bg-img(contain);
+	display: block;
   }
   &__i-body{
 	border-bottom: 1px solid $gray-e5;
@@ -107,6 +108,7 @@
 	color: $gray-4e;
 	text-transform: uppercase;
 	padding: 0 20px;
+	display: block;
   }
   &__i-art{
 	color: $gray-c0;
@@ -215,6 +217,7 @@
 	width: 180px;
 	flex: 0 0 auto;
 	margin-right: 15px;
+	display: block;
   }
   &__info{
 	width: 457px;

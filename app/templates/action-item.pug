@@ -1,0 +1,153 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог';
+
+block title
+    title Каталог
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__item
+                    a.breadcrumbs__link(href="/") каталог
+                .breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Специальные предложения
+                .breadcrumbs__current
+                    span Готовое решение для переезда
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .detail-page
+                    .detail
+                        .detail__main
+                            .detail__left
+                                .detail__gallery-w
+                                    .detail__gallery
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev.active(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/2.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/3.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/2.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/3.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                    .detail-next
+                                    .detail-prev
+
+                            .detail__center
+                                .detail__img.js-big(style="background-image:url('images/TEMP/1.jpg')" data-fancybox="gallery" href="images/TEMP/1.jpg")
+                                    .detail__zoom
+                                .detail__repost
+                                    .detail__repost-bl
+                                        img(src="images/repost.png")
+                                    .detail__repost-txt поделиться с друзьями
+                            .detail__right
+                                .detail__ttl.detail__ttl_action Готовое решение для переезда
+                                .detail__price-w
+                                    .detail__price
+                                        span.price.detail__int 460.
+                                        span.price.detail__kop 00
+                                        span.rub.detail__rub И
+                                        span.detail__star *
+                                    form.to-basket
+                                        .to-basket__input
+                                            input.value.value_m(type="number" min="1" value="1")
+                                        .to-basket__btn
+                                            button.btn.btn_m.btn_32.btn-red(type="submit") В&nbsp;корзину
+                                .detail__text
+                                    .detail__disclamer
+                                        .detail__disclamer-s *
+                                        .detail__disclamer-t —
+                                        .detail__disclamer-t минимальная стоимость заказа, после оформления наш менеджер свяжется с вами для уточнения всех деталей
+                                    p Профессиональная упаковка — гарантия бережной перевозки вашего имущества при переезде  на новое место работы или жительства.
+
+                                    p Обеспечьте бережную транспортировку  Ваших вещей благодаря «Упаковке».
+
+                        .detail__dop
+                            .detail__dop-ttl Состав специального предложения:
+                            .detail__dop-body.detail__dop-cc2.
+                                — Воздушнопузырчатая пленка (двухслойная) 150 кв.м<br>
+                                — Пленка-стрейч 17мкм<br>
+                                — Пленка-стрейч 20мкм<br>
+                                — Пленка-стрейч 20 мкм (2кг)<br>
+                                — Скотч 5х66 AVIORA прозрачный/36<br>
+                                — Диспенсер д/скотча 50мм*66м К20В<br>
+                                — Мешок полипропиленовый 55х95 (зеленый)<br>
+                                — Мешок 1 сорта (белый) 55х105<br>
+                                — Картонная коробка 330*230*230<br>
+                                — Коробка картонная 430*290*235<br>
+                                — Коробка картонная 480*325*295<br>
+                                — Коробка картонная 590*380*590<br>
+                                — Коробка картонная архивная  580*350*410<br>
+                                — Пакет для мусора<br>
+                                — Бумага оберточная в рулоне<br>
+                                — Сумки хозяйственная<br>
+                                — Шпагат<br>
+                                — Коробка картонная 430*290*235<br>
+                                — Коробка картонная 480*325*295<br>
+                                — Коробка картонная 590*380*590<br>
+                                — Коробка картонная архивная  580*350*410<br>
+                                — Пакет для мусора<br>
+                                — Бумага оберточная в рулоне<br>
+                                — Сумки хозяйственная<br>
+                                — Шпагат<br>
+                    //end .detail
+                    .viewed
+                        .viewed__header
+                            .viewed__h Вы уже смотрели
+                            .viewed__line
+                            .viewed__nav
+                                .viewed__prev
+                                .viewed__next
+                        .viewed__body
+                            .swiper-wrapper
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                    //end .viewed
+                //end .detail-page
+            //end .inner-page
+    //end workarea

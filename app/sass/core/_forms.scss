@@ -150,4 +150,10 @@
   padding-left: 20px;
   padding-right: 15px;
   box-sizing: border-box;
+  &_m{
+	width: 92px;
+	height: 46px;
+	background-color: $white;
+	border-radius: 23px;
+  }
 }

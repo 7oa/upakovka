@@ -1,0 +1,271 @@
+.detail-page{
+  margin: 0 15px;
+  padding-bottom: 125px;
+}
+.detail{
+  background-color: $white;
+  border: 1px solid $gray-e5;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+  margin-bottom: 50px;
+
+  &__main{
+	display: flex;
+	align-items: stretch;
+  }
+  &__left{
+	width: 160px;
+	flex: 0 0 auto;
+	border-right: 1px solid $gray-e5;
+	padding-top: 50px;
+	padding-bottom: 40px;
+  }
+  &__right{
+	padding: 29px 35px 35px 0;
+	flex: 0 1 auto;
+  }
+  &__center{
+	width: 620px;
+	flex: 0 0 auto;
+	padding: 35px 30px;
+	box-sizing: border-box;
+  }
+  &__img{
+	@include bg-img(cover);
+	width: 100%;
+	height: 460px;
+	margin-bottom: 30px;
+	position: relative;
+  }
+  &__zoom{
+	position: absolute;
+	top: 19px;
+	left: 13px;
+	background-image: url('images/zoom-button.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 56px;
+	height: 56px;
+	cursor: pointer;
+  }
+  &__repost-bl{
+	opacity: .3;
+	transition: .5s;
+  }
+  &__repost-txt{
+	font: 12px/24px 'Lato';
+	color: $gray-7b;
+	opacity: .62;
+	transition: .5s;
+  }
+  &__repost{
+	display: flex;
+	align-items: center;
+	&:hover{
+	  .detail__repost-bl,
+	  .detail__repost-txt{
+		opacity: 1;
+	  }
+	}
+  }
+
+  &__ttl{
+	font: 24px/30px 'IdealistSans';
+	color: $gray-4e;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	&_action{
+	  margin-bottom: 40px;
+	}
+  }
+  &__art{
+	color: $gray-c0;
+	font: 11px/18px 'Lato';
+	margin-bottom: 17px;
+  }
+  &__price-w{
+	background-color: $gb-1;
+	border: 2px solid $white;
+	border-radius: 6px;
+	box-shadow: 0 11px 13px rgba(64, 64, 64, 0.2);
+	margin-bottom: 28px;
+	padding: 26px 35px 25px;
+  }
+  &__text{
+	color: $gray-7b;
+	font: 14px/24px 'Lato';
+	p{
+	  margin-bottom: 26px;
+	}
+  }
+  &__price{
+	color: $gray-4e;
+	margin-bottom: 18px;
+  }
+  &__int{
+	font-size: 46px;
+  }
+  &__kop{
+	font-size: 36px;
+  }
+  &__rub{
+	font-size: 34px;
+  }
+  &__sep{
+	font-size: 34px;
+  }
+  &__st{
+	font-size: 21px;
+  }
+  &__star{
+	font-family: 'Lato';
+	font-weight: bold;
+	font-size: 36px;
+	margin-left: 10px;
+  }
+  &__gallery-w{
+	height: 450px;
+	//overflow: hidden;
+	position: relative;
+  }
+  &__gallery{
+	width: 80px;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 450px;
+  }
+  &__gallery-item{
+	@include bg-img(cover);
+	width: 76px;
+	height: 76px;
+	background-color: $white;
+	border: 3px solid $gray-e9;
+	border-radius: 8px;
+	cursor: pointer;
+	&.active{
+	  border-color: $red-fc;
+	}
+  }
+  &__dop{
+	margin: 0 15px;
+	border-top: 1px solid $gray-e5;
+	font: 14px/30px 'Lato';
+	color: $gray-7b;
+	padding: 44px 165px 75px;
+  }
+  &__dop-ttl{
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-size: 16px;
+	padding-left: 15px;
+  }
+  &__dop-cc2{
+	column-count: 2;
+	column-gap: 65px;
+  }
+  &__disclamer{
+	display: flex;
+	color: $gray-a0;
+	margin-bottom: 20px;
+  }
+  &__disclamer-s{
+	font-size: 30px;
+	font-family: 'Lato-Semibold';
+	margin-right: 5px;
+  }
+  &__disclamer-t{
+	font-size: 12px;
+	line-height: 16px;
+	margin-right: 5px;
+  }
+}
+.detail-next,
+.detail-prev{
+  background-image: url('images/gallery-next.png');
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 2;
+  cursor: pointer;
+  &.swiper-button-disabled{
+	display: none;
+  }
+}
+.detail-prev{
+  top: -26px;
+  transform: rotate(180deg);
+}
+.detail-next{
+  bottom: -26px;
+}
+.viewed{
+  &__header{
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+  }
+  &__h{
+	color: $gray-4e;
+	font: 24px/27px 'IdealistSans';
+	margin-right: 10px;
+	flex: 0 0 auto;
+  }
+  &__line{
+	height: 1px;
+	background-color: #dedede;
+	flex: 1 0 auto;
+	margin-right: 10px;
+  }
+  &__nav{
+	width: 63px;
+	flex: 0 0 auto;
+	display: flex;
+  }
+  &__prev,
+  &__next{
+	height: 34px;
+	background-image: url('images/viewed-nav.png');
+	background-repeat: no-repeat;
+	cursor: pointer;
+  }
+  &__prev{
+	width: 33px;
+	background-position: 0 0;
+  }
+  &__next{
+	width: 31px;
+	background-position: -33px 0;
+  }
+  &__body{
+	overflow: hidden;
+  }
+  &__item{
+	box-sizing: border-box;
+	display: block;
+	width: 165px;
+	height: 247px;
+	background-color: $white;
+	border: 1px solid $gray-e5;
+	border-radius: 4px;
+	box-shadow: 0 3px 5px rgba(64, 64, 64, 0.1);
+	overflow: hidden;
+  }
+  &__img{
+	@include bg-img(contain);
+	width: 100%;
+	height: 160px;
+	border-bottom: 1px solid $gray-de;
+  }
+  &__ttl{
+	color: $gray-4e;
+	font: 12px/16px 'IdealistSans';
+	text-transform: uppercase;
+	text-align: center;
+	padding: 17px 10px 0;
+  }
+
+}

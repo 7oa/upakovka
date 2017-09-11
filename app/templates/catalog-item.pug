@@ -1,0 +1,138 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Каталог';
+
+block title
+    title Каталог
+
+block content
+    //workarea
+    .workarea
+        .container
+            .breadcrumbs
+                .breadcrumbs__item
+                    a.breadcrumbs__link.breadcrumbs__link_home(href="/")
+                .breadcrumbs__item
+                    a.breadcrumbs__link(href="/") каталог
+                .breadcrumbs__item
+                    a.breadcrumbs__link(href="/") ОДНОРАЗОВАЯ УПАКОВКА
+                .breadcrumbs__item
+                    a.breadcrumbs__link(href="/") Упаковка, принадлежности для суши
+                .breadcrumbs__current
+                    span Одноразовая тарелочка для супа
+            //end .breadcrumbs
+        .container-h
+            .inner-page
+                .detail-page
+                    .detail
+                        .detail__main
+                            .detail__left
+                                .detail__gallery-w
+                                    .detail__gallery
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev.active(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/2.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/3.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/2.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/3.jpg')")
+                                            .swiper-slide
+                                                .detail__gallery-item.js-prev(style="background-image:url('images/TEMP/1.jpg')")
+                                    .detail-next
+                                    .detail-prev
+
+                            .detail__center
+                                .detail__img.js-big(style="background-image:url('images/TEMP/1.jpg')" data-fancybox="gallery" href="images/TEMP/1.jpg")
+                                    .detail__zoom
+                                .detail__repost
+                                    .detail__repost-bl
+                                        img(src="images/repost.png")
+                                    .detail__repost-txt поделиться с друзьями
+                            .detail__right
+                                .detail__ttl Одноразовая тарелочка для супа
+                                .detail__art 347RP10WHSS
+                                .detail__price-w
+                                    .detail__price
+                                        span.price.detail__int 3.
+                                        span.price.detail__kop 96
+                                        span.rub.detail__rub И
+                                        span.sep.detail__sep /
+                                        span.st.detail__st шт
+                                    form.to-basket
+                                        .to-basket__input
+                                            input.value.value_m(type="number" min="1" value="10")
+                                        .to-basket__btn
+                                            button.btn.btn_m.btn_32.btn-red(type="submit") В&nbsp;корзину
+                                .detail__text
+                                    p Суповые тарелки среди широкого ассортимента нашего интернет-магазина посуды, занимают одно из самых высоких мест по востребованности.
+                                    table
+                                        tr
+                                            td(width="145") Артикул:
+                                            td SM-400
+                                        tr
+                                            td Материал:
+                                            td сахарный тростник
+                                        tr
+                                            td Объем:
+                                            td 400 мл.
+                                        tr
+                                            td Размер:
+                                            td 160*36 мм.
+                                        tr
+                                            td Цвета:
+                                            td белый
+                    //end .detail
+                    .viewed
+                        .viewed__header
+                            .viewed__h Вы уже смотрели
+                            .viewed__line
+                            .viewed__nav
+                                .viewed__prev
+                                .viewed__next
+                        .viewed__body
+                            .swiper-wrapper
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c1.png')")
+                                        .viewed__ttl Одноразовая тарелка 3-х секционная
+                                .swiper-slide
+                                    a.viewed__item(href="#")
+                                        .viewed__img(style="background-image:url('images/TEMP/c2.png')")
+                                        .viewed__ttl Одноразовый контейнер 600 мл.
+                    //end .viewed
+                //end .detail-page
+            //end .inner-page
+    //end workarea
