@@ -27,18 +27,20 @@
 	span{
 	  margin-right: 10px;
 	}
-	&:after{
-	  content: '';
-	  background-image: url('images/menu-arrow.png');
-	  background-size: 8px 5px;
-	  background-repeat: no-repeat;
-	  width: 10px;
-	  height: 10px;
-	  display: block;
-	  flex: 0 0 auto;
-	  margin-top: 8px;
-	  background-position: center;
-	}
+    &_sub{
+      &:after{
+        content: '';
+        background-image: url('images/menu-arrow.png');
+        background-size: 8px 5px;
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 10px;
+        display: block;
+        flex: 0 0 auto;
+        margin-top: 8px;
+        background-position: center;
+      }
+    }
   }
   &__item{
 	background-image: url('images/red-dots.png');

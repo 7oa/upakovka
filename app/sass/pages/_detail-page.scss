@@ -51,6 +51,7 @@
   &__repost-bl{
 	opacity: .3;
 	transition: .5s;
+    padding: 0 10px;
   }
   &__repost-txt{
 	font: 12px/24px 'Lato';
@@ -129,7 +130,7 @@
 	position: relative;
   }
   &__gallery{
-	width: 80px;
+	width: 82px;
 	margin: 0 auto;
 	overflow: hidden;
 	height: 450px;
@@ -152,6 +153,9 @@
 	font: 14px/30px 'Lato';
 	color: $gray-7b;
 	padding: 44px 165px 75px;
+	  a{
+        color: $gray-7b;
+	  }
   }
   &__dop-ttl{
 	text-transform: uppercase;

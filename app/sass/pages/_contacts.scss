@@ -29,12 +29,12 @@
   background-color: $white;
   flex: 1 0 auto;
   &__img{
-	height: 189px;
+	height: 140px;
 	@include bg-img(cover);
 	border-bottom: 1px solid $gray-e5;
   }
   &__body{
-	height: 316px;
+	//height: 316px;
 	border-bottom: 1px solid $gray-e5;
 	box-sizing: border-box;
 	padding: 16px 36px 0;
@@ -62,7 +62,7 @@
 	color: $gray-4e;
 	background-position-y: 2px;
 	background-position-x: 4px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
   }
   &__time{
 	background-image: url(images/green-clock.png);
@@ -112,14 +112,14 @@
 	font-size: 16px;
 	font-family: 'Lato';
 	color: $gray-4e;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	a{
 	  color: $gray-4e;
 	}
   }
   &__btn{
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 22px;
   }
 }
 .w-addr{

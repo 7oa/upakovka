@@ -4,3 +4,70 @@
 .cat-bottom{
   margin-bottom: 142px;
 }
+.basket-mess{
+  width: 652px;
+  //height: 308px;
+  background-color: $gb-1;
+  border: 2px solid $white;
+  border-radius: 6px;
+  box-shadow: 0 11px 13px rgba(64, 64, 64, 0.2);
+  padding: 0;
+  font-family: 'Lato';
+  &__ttl{
+	font-size: 30px;
+	font-family: 'IdealistSans';
+	margin-bottom: 40px;
+  }
+  &__content{
+  	width: 458px;
+	margin: 0 auto;
+	padding-top: 40px;
+	margin-bottom: 23px;
+  }
+  &__body{
+	display: flex;
+	align-items: center;
+    line-height: 1.4;
+    strong{
+      font-weight: bold;
+      color: $green-15;
+    }
+  }
+  &__cnt{
+	font-size: 18px;
+	line-height: 24px;
+	font-family: 'IdealistSans';
+  }
+  &__img{
+	@include bg-img(cover);
+	width: 76px;
+	height: 76px;
+	background-color: $white;
+	border: 1px solid $gray-e9;
+	border-radius: 8px;
+	margin-right: 22px;
+	flex: 0 0 auto;
+  }
+  &__footer{
+	border-top: 1px solid $gray-de;
+	padding-top: 26px;
+	padding-bottom: 28px;
+  }
+  &__footer-in{
+	width: 458px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+  }
+  .fancybox-close-small{
+	width: 24px;
+	height: 24px;
+	@include bg-img(contain);
+	background-image: url(images/del.png);
+	top: 20px;
+	right: 20px;
+	&:after{
+	  display: none;
+	}
+  }
+}

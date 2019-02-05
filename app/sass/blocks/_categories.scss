@@ -6,16 +6,19 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	bottom: 0;
+	//bottom: 0;
 	width: 360px;
-	height: 100%;
+	min-height: 100%;
+    height: auto;
 	background-color: rgba(57,173,76,0.9);
 	color: $white;
 	box-sizing: border-box;
-	padding: 32px 30px;
-	opacity: 0;
+	padding: 32px 30px 10px;
+	visibility: hidden;
+    opacity: 0;
 	transition: opacity .5s;
 	border-radius: 4px;
+  	z-index: 2;
   }
   &__li{
 	background-image: url('images/white-dots.png');
@@ -26,6 +29,9 @@
 	font-family: 'IdealistSans';
 	font-size: 15px;
 	line-height: 16px;
+	a{
+	  color: $white;
+	}
   }
   &__item{
 	flex: 0 0 auto;
@@ -40,7 +46,8 @@
 	position: relative;
 	&:hover{
 	  .categories__hidden{
-		opacity: 1;
+        visibility: visible;
+        opacity: 1;
 	  }
 	}
   }
@@ -55,7 +62,7 @@
 	flex: 1 0 auto;
   }
   &__img-w{
-	flex: 0 0 195px;
+	flex: 50 0 50px;
   }
   &__img{
 	@include bg-img(contain);

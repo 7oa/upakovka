@@ -71,7 +71,7 @@ block content
                                         .to-basket__input
                                             input.value.value_m(type="number" min="1" value="10")
                                         .to-basket__btn
-                                            button.btn.btn_m.btn_32.btn-red(type="submit") В&nbsp;корзину
+                                            button.btn.btn_m.btn_32.btn-red(type="submit" data-fancybox data-src="#basket-mess") В&nbsp;корзину
                                 .detail__text
                                     p Суповые тарелки среди широкого ассортимента нашего интернет-магазина посуды, занимают одно из самых высоких мест по востребованности.
                                     table
@@ -91,6 +91,19 @@ block content
                                             td Цвета:
                                             td белый
                     //end .detail
+                    .basket-mess#basket-mess(style="display: none;")
+                        .basket-mess__content
+                            .basket-mess__ttl Добавлено в корзину!
+                            .basket-mess__body
+                                .basket-mess__img(style="background-image:url('images/TEMP/c1.png')")
+                                .basket-mess__cnt
+                                    .basket-mess__name Одноразовая тарелочка для супа
+                                    .basket-mess__count 10 шт.
+                        .basket-mess__footer
+                            .basket-mess__footer-in
+                                button.btn.btn_m.btn_32.btn-white(data-fancybox-close) продолжить покупки
+                                button.btn.btn_m.btn_32.btn-red оформить заказ
+                    //end #basket-mess
                     .viewed
                         .viewed__header
                             .viewed__h Вы уже смотрели

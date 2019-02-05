@@ -3,6 +3,7 @@
 //= plugins/_swiper.min.js
 //= plugins/_jquery.maskedinput.min.js
 //= plugins/_jquery.fancybox.min.js
+//= plugins/_jquery.cookie.js
 
 //Scripts
 //= scripts/script.js

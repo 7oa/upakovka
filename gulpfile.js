@@ -2,9 +2,7 @@ var gulp = require("gulp"),
     connect = require("gulp-connect"),
     opn = require("opn"),
     sass = require("gulp-sass"),
-    pug = require("gulp-pug");
-
-var gulpFilter = require('gulp-filter'),
+    pug = require("gulp-pug"),
     rename = require('gulp-rename'),
     rimraf = require('rimraf'),
     uglify = require('gulp-uglify'),
@@ -14,9 +12,13 @@ var gulpFilter = require('gulp-filter'),
     pngquant = require('imagemin-pngquant'),
     watch = require('gulp-watch'),
     rigger = require('gulp-rigger'),
-    sourcemaps = require('gulp-sourcemaps');
+    cache = require('gulp-cache'),
+    browserSync = require('browser-sync'),
+    pugbem = require('gulp-pugbem');
 
 var dest_path = 'public';
+var app_path = 'app';
+
 function log(error) {
     console.log([
         '',
@@ -34,7 +36,7 @@ gulp.task('pug', function() {
         .pipe(pug({pretty: true}))
         .on('error', log)
         .pipe(gulp.dest(dest_path + '/'))
-        .pipe(connect.reload());
+        .pipe(browserSync.stream());
 });
 
 var autoprefixerOptions = {
@@ -55,7 +57,7 @@ gulp.task('sass', function() {
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(cssmin())
         .pipe(gulp.dest( dest_path ))
-        .pipe(connect.reload());
+        .pipe(browserSync.stream());
 });
 
 // Работа с js
@@ -64,7 +66,7 @@ gulp.task('js', function() {
         .pipe(rigger())
         .pipe(uglify())
         .pipe(gulp.dest( dest_path + '/js/'))
-        .pipe(connect.reload());
+        .pipe(browserSync.stream());
 });
 
 // Сборка IMG
@@ -77,14 +79,14 @@ gulp.task('image', function () {
             interlaced: true
         }))
         .pipe(gulp.dest(dest_path + '/images/')) //И бросим в public/images/
-        .pipe(connect.reload());
+        .pipe(browserSync.stream());
 });
 
 // Сборка Fonts
 gulp.task('fonts', function () {
     gulp.src('./app/fonts/**/*.*')
         .pipe(gulp.dest(dest_path + '/fonts/')) //И бросим в public/css/fonts/
-        .pipe(connect.reload());
+        .pipe(browserSync.stream());
 });
 
 // Такс запускает одной командой все предыдущие таски
@@ -133,18 +135,20 @@ gulp.task('serv_livereload', function() {
     opn('http://localhost:8888');
 });
 
-// Запуск сервера без лайврелоада
-gulp.task('serv_no_livereload', function() {
-    connect.server({
-        root: dest_path,
-        port: 8888
+browserSync.create();
+var reload = browserSync.reload;
+//  Запуск browserSync, и слежения за изменениями в файлах
+gulp.task('server', function () {
+    browserSync.init({
+        server: dest_path, //Рабоччая директория
+        browser: 'chrome', //Запуск браузера Google Chrome
+        notify: false //Не отображать уведомления browserSync в браузере
     });
-    opn('http://localhost:8888');
 });
 
 
-// Задача по-умолчанию 
-gulp.task('default', ['serv_livereload', 'watch']);
+// Задача по-умолчанию
+gulp.task('default', ['server', 'watch']);
 
 // Для ie
 gulp.task('serv', ['serv_no_livereload', 'watch']);

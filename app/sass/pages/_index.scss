@@ -86,6 +86,7 @@
 	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
 	opacity: .33;
+    transition: .5s;
 	&.active{
 	  border-color: $green-21;
 	  opacity: 1;
@@ -335,11 +336,13 @@
   &__list{
 	margin-bottom: 49px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: end;
+  	flex-wrap: wrap;
   }
   &__item{
 	text-align: center;
 	width: 300px;
+  	margin: 0 40px 30px;
   }
   &__foto{
 	width: 82px;

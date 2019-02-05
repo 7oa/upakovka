@@ -1,10 +1,20 @@
 // js jquery
 $(document).ready(function() {
 	var galleryTop = new Swiper('.top-slider__full', {
-		effect: 'fade'
+		effect: 'fade',
+        autoplay: 5000,
+        autoplayStopOnLast: false,
+        speed: 600,
+        autoplayDisableOnInteraction: false,
+        onSlideChangeStart: function(swiper) {
+			// console.log('slide '+swiper.realIndex);
+            $('.top-slider__prev').removeClass('active');
+            $('.top-slider__prev:eq('+swiper.realIndex+')').addClass('active');
+        }
 	});
 	$(".top-slider__thumbs").on('click', '.top-slider__prev', function(){
 		galleryTop.slideTo($(this).index(), 500);
+        // console.log('page '+$(this).index());
 		$('.top-slider__prev').removeClass('active');
 		$(this).addClass('active');
 	});
@@ -46,7 +56,12 @@ $(document).ready(function() {
 		$('.js-prev').removeClass('active');
 		$(this).addClass('active');
 		var bg =  $(this).css('background-image');
-		console.log(bg);
-		$('.js-big').css('background-image',bg);
+        var link = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+		$('.js-big').css('background-image', bg).attr('href', link);
+	});
+	$(".js-menu-link").click(function(){
+		$(this).next(".js-menu-child").slideToggle();
+		$(this).parent().toggleClass("active");
+		return false;
 	});
 });
